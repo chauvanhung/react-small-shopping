@@ -1,25 +1,5 @@
 # Build ECommerce Shopping Cart by React & Redux 2020 Edition
 
-## What you’ll learn
-- Design Shopping Cart Using HTML and CSS
-- Implement React Components For Product List, Filter, Cart
-- Managing Component State using Redux, React-Redux and - Redux-Thunk
-- Creating Animations Using React-Reveal and Add Routes using React-Routers
-- Build Backend using Node, Express, MongoDB and Mongoose
-- Publish Project on the Heroku and MongoDB Atlas
-
-## Are there any course requirements or prerequisites?
-
-- Basic HTML and CSS
-- Basic JavaScript
-
-## Who this course is for:
-
-- Javascript developers
-- Web Developers
-- Freelancers
-- Programming Students
-
 ## Table Of Content
 
 1. Introduction
@@ -338,43 +318,3 @@
       32. index.css
       33. style orders
 
-6. Deploy Website
-   1. Create MongoDB Cloud Database
-   2. Login to https://www.mongodb.com/cloud
-   3. Add database user
-   4. Left sidebar> Select Security > Database Access
-   5. Select Add New User button
-   6. Enter user name and password and click Add User
-   7. Add IP whitelist
-   8. Left sidebar > Select Security > Network Access
-   9. Select Add IP Address
-   10. Enter 0.0.0.0/0 in Whitelist Entry and click Confirm
-   11. Get connection string
-   12. Left sidebar > Select Altas > Cluster
-   13. Click Connect
-   14. Click Connect to your application
-   15. Click Copy button
-   16. Step 2: Deploy On Heroku
-   17. Create git repository in amazona folder using git init
-   18. Create Heroku Account at heroku.com
-   19. Heroku
-   20. Create Heroku account on heroku.com
-   21. Install Heroku cli https://devcenter.heroku.com/articles/heroku-cli
-   22. Open Terminal
-   23. heroku login
-   24. heroku apps:create react-shopping-cart-best
-   25. Edit package.json
-   26. "engines": { "node": "12.4.0", "npm": "6.9.0"}
-   27. Create Procfile
-   28. web: node server.js
-   29. Set MongoDB connection string in Heroku
-   30. Open Heroku apps https://dashboard.heroku.com/apps/
-   31. Select your apps, open Setting Tab and click Reveal Config Vars
-   32. Add key MONGODB_URL
-   33. Enter copied connection string from the previous step
-   34. Update database name and username and password
-   35. Add key NODE_MODULES_CACHE and value false
-   36. app.use("/", express.static(\_\_dirname + "/build"));
-   37. app.get("/", (req, res) => res.sendFile(\_\_dirname + "/build/index.html"));
-   38. git add . && git commit -m "publish"
-   39. git push heroku
